@@ -34,3 +34,10 @@ win_height = 500
 win = display.set_mode((win_width, win_height))
 display.set_caption("Ping-Pong")
 background = transform.scale(image.load("tennis-court.webp"), (win_width, win_height))
+
+ball = GameSprite("tennis.png", 10, 10, 2, 200, 200)
+racket1 = Player("i.webp", 50, 50, 3, 10, 100)
+racket2 = Player("i.webp", 50, 50, 3, 690, 100)
+
+speed_x = 3
+speed_y = 3
