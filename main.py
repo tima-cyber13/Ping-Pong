@@ -51,3 +51,12 @@ finish = False
 game = True
 clock = time.Clock()
 FPS = 60
+
+while game:
+    for e in event.get():
+        if e.type == QUIT:
+            game = False 
+    
+    if finish == False:
+        ball.rect.x += speed_x
+        ball.rect.y += speed_y
