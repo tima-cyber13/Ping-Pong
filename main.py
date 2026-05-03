@@ -41,3 +41,13 @@ racket2 = Player("i.webp", 50, 50, 3, 690, 100)
 
 speed_x = 3
 speed_y = 3
+
+font.init()
+font = font.Font(None, 35)
+win1 = font.render('PLAYER 1 WIN!', True, (255, 215, 0))
+win2 = font.render('PLAYER 2 WIN!', True, (255, 215, 0))
+
+finish = False
+game = True
+clock = time.Clock()
+FPS = 60
