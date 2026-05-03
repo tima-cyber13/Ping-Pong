@@ -28,3 +28,9 @@ class Player(GameSprite):
             self.rect.y -= self.speed
         if keys[K_s] and self.rect.y < win_height - 80:
             self.rect.y += self.speed
+
+win_width = 700
+win_height = 500
+win = display.set_mode((win_width, win_height))
+display.set_caption("Ping-Pong")
+background = transform.scale(image.load("tennis-court.webp"), (win_width, win_height))
